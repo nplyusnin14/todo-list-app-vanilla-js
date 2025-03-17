@@ -4,186 +4,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Todo Lists</title>
+  <script src="./src/app.js" type="module" defer></script>
 </head>
 <body>
   <div class="container">
     <h1>Todo Lists</h1>
 
-    <button>Create list</button>
+    <div>
+      <div>
+        <h2>Create New List</h2>
 
-    <div class="lists">
-      <div class="todo-list">
-        <h2>List 1</h2>
-
-        <ul>
-          <li>
-            <input type="checkbox">
-            <span>Foo</span>
-            <button>Edit</button>
-            <button>Delete</button>
-          </li>
-
-          <li>
-            <input type="checkbox">
-            <span>Bar</span>
-            <button>Edit</button>
-            <button>Delete</button>
-          </li>
-
-          <li>
-            <input type="checkbox">
-            <span>Baz</span>
-            <button>Edit</button>
-            <button>Delete</button>
-          </li>
-        </ul>
-
-        <form>
-          <input type="text">
-          <button>Add</button>
-        </form>
-      </div>
-
-      <div class="todo-list">
-        <h2>List 2</h2>
-
-        <ul>
-          <li>
-            <input type="checkbox">
-            <span>Foo</span>
-            <button>Edit</button>
-            <button>Delete</button>
-          </li>
-
-          <li>
-            <input type="checkbox">
-            <span>Bar</span>
-            <button>Edit</button>
-            <button>Delete</button>
-          </li>
-
-          <li>
-            <input type="checkbox">
-            <span>Baz</span>
-            <button>Edit</button>
-            <button>Delete</button>
-          </li>
-        </ul>
-
-        <form>
-          <input type="text">
-          <button>Add</button>
-        </form>
-      </div>
-
-      <div class="todo-list">
-        <h2>List 3</h2>
-
-        <ul>
-          <li>
-            <input type="checkbox">
-            <span>Foo</span>
-            <button>Edit</button>
-            <button>Delete</button>
-          </li>
-
-          <li>
-            <input type="checkbox">
-            <span>Bar</span>
-            <button>Edit</button>
-            <button>Delete</button>
-          </li>
-
-          <li>
-            <input type="checkbox">
-            <span>Baz</span>
-            <button>Edit</button>
-            <button>Delete</button>
-          </li>
-        </ul>
-
-        <form>
-          <input type="text">
-          <button>Add</button>
-        </form>
-      </div>
-
-      <div class="todo-list">
-        <h2>List 4</h2>
-
-        <ul>
-          <li>
-            <input type="checkbox">
-            <span>Foo</span>
-            <button>Edit</button>
-            <button>Delete</button>
-          </li>
-
-          <li>
-            <input type="checkbox">
-            <span>Bar</span>
-            <button>Edit</button>
-            <button>Delete</button>
-          </li>
-
-          <li>
-            <input type="checkbox">
-            <span>Baz</span>
-            <button>Edit</button>
-            <button>Delete</button>
-          </li>
-        </ul>
-
-        <form>
-          <input type="text">
-          <button>Add</button>
-        </form>
-      </div>
-
-      <div class="todo-list">
-        <h2>List 5</h2>
-
-        <ul>
-          <li>
-            <input type="checkbox">
-            <span>Foo</span>
-            <button>Edit</button>
-            <button>Delete</button>
-          </li>
-
-          <li>
-            <input type="checkbox">
-            <span>Bar</span>
-            <button>Edit</button>
-            <button>Delete</button>
-          </li>
-
-          <li>
-            <input type="checkbox">
-            <span>Baz</span>
-            <button>Edit</button>
-            <button>Delete</button>
-          </li>
-        </ul>
-
-        <form>
-          <input type="text">
-          <button>Add</button>
+        <form class="new-list-form">
+          <input type="text" class="new-list-form__input">
+          <button>Create</button>
         </form>
       </div>
     </div>
-  </div>
 
-  <div class="modal">
-    <div class="modal-card">
-      <h2>Create New List</h2>
-
-      <form>
-        <input type="text">
-        <button>Create</button>
-        <button>Cancel</button>
-      </form>
-    </div>
+    <div class="lists"></div>
   </div>
 </body>
 </html>
